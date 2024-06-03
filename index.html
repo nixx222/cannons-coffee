@@ -4,70 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-          <div class="top-nav">
-            <p><a href=""><img src="img/logo-nav.png" alt="Cannons Coffee Logo" class="logo" /></a></p>
-            <h1>CANNONS COFFEE</h1>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="latte.html">COFFEE</a></li>
-              <li><a href="https://mikava.coffee/" target="_blank">ABOUT</a></li>
-              <li><a href="mailto:phoenix@anniecannons.com" target="_blank">CONTACT</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div class="hero">
+<div class="container">
+  <header>
+    <div class="top-nav">
+      <p><a href=""><img src="https://assets.codepen.io/296057/logo-nav.png" alt="Cannons Coffee Logo" class="logo" /></a></p>
+      <h1>CANNONS COFFEE</h1>
+    </div>
+    <nav>
+      <ul class="navlink-wrapper">
+        <li class="navlink"><a href="index.html">HOME</a></li>
+        <li class="navlink"><a href="latte.html">COFFEE</a></li>
+        <li class="navlink"><a href="https://mikava.coffee/" target="_blank">ABOUT</a></li>
+        <li class="navlink"><a href="mailto:phoenix@anniecannons.com" target="_blank">CONTACT</a></li>
+      </ul>
+      <button onclick="showHamburger()" class="burger">
+        <i class="fa fa-bars"></i>
+      </button>
+    </nav>
 
-          <img src="img/coffee-computer.jpg" alt="A latte and a laptop" />
-          <div>
-          <h2>COFFEE AND CODE</h2>
-          <p>Join us at Cannons Coffee for a pick-me-up and plenty of code assistance and support at our coding cafe!</p>
-          <p><a href="" target="_blank" class="hero-button">RESERVE A TABLE </a></p>
-        </div>
-        </div>
-        <div class="coffee-container">
-          <h2>OUR COFFEE</h2>
-          <div class="coffee-card">
-            <div class="card">
-              <h3>Latte</h3>
-              <img src="img/latte.jpg" alt="A hand holding a latte and pouring cream into latte cup" />
-              <p>Hot or cold, with dairy or oat milk, your favorite is available anytime!</p>
-              <p><a href="latte.html" target="_blank" class="button">ORDER LATTE</a></p>
-            </div>
-            <div class="card">
-              <h2></h2>
-              <h3>Coffee</h3>
-              <img src="img/coffee.jpg" alt="A cup of coffee in a white coffee cup on a table" />
-              <p>Simple, elegant, and always in style, our black coffee comes from Colombia in small, hand-roasted batches.</p>
-              <p><a href="" target="_blank" class="button">ORDER COFFEE</a></p>
-            </div>
-            <div class="card">
-              <h3>Hot Chocolate</h3>
-              <h2></h2>
-              <img src="img/hotchoc.jpg" alt="A mug of hot chocolate with whipped cream" />
-              <p>Not a coffee person? We have you covered. Hot, sweet, ready anytime.
-              </p>
-              <p><a href="" target="_blank" class="button">ORDER HOT</a></p>
-            </div>
-            <div class="card">
-              <h3>Iced Coffee</h3>
-              <h2></h2>
-              <img src="img/iced.jpg" alt="A copper mug of iced coffee" />
-              <p>Perfect for hot summer days, our iced coffee is made with just enough sweetness to cool down your day. </p>
-              <p><a href="" target="_blank" class="button">ORDER ICED</a></p>
-            </div>
-          </div>
-        </div>
-        <footer>
-          <p><a href=""><img src="img/logo-footer.png" alt="Cannons Coffee Logo for footer" class="footer-logo" /></a></p>
-          <p>&copy; 2024 Cannons Coffee. All Rights Reserved.</p>
-        </footer>
+  </header>
+  <div class="hero">
+    <img src="https://assets.codepen.io/296057/coffee-computer.jpg" alt="A latte and a laptop" />
+    <h2>COFFEE AND CODE</h2>
+    <p>Join us at Cannons Coffee for a pick-me-up and plenty of code assistance and support at our coding cafe!</p>
+    <p><a href="" target="_blank" class="hero-button">RESERVE A TABLE </a></p>
+  </div>
+  <div class="coffee-container">
+    <h2>OUR COFFEE</h2>
+    <div class="coffee-card">
+      <div class="card">
+        <h3>Latte</h3>
+        <img src="https://assets.codepen.io/296057/latte.jpg" alt="A hand holding a latte and pouring cream into latte cup" />
+        <p>Hot or cold, with dairy or oat milk, your favorite is available anytime!</p>
+        <p><a href="#" target="_blank" class="button">ORDER LATTE</a></p>
       </div>
+      <div class="card">
+        <h2></h2>
+        <h3>Coffee</h3>
+        <img src="https://assets.codepen.io/296057/coffee.jpg" alt="A cup of coffee in a white coffee cup on a table" />
+        <p>Simple, elegant, and always in style, our black coffee comes from Colombia in small, hand-roasted batches.</p>
+        <p><a href="" target="_blank" class="button">ORDER COFFEE</a></p>
+      </div>
+      <div class="card">
+        <h3>Hot Chocolate</h3>
+        <h2></h2>
+        <img src="https://assets.codepen.io/296057/hotchoc.jpg" alt="A mug of hot chocolate with whipped cream" />
+        <p>Not a coffee person? We have you covered. Hot, sweet, ready anytime.
+        </p>
+        <p><a href="" target="_blank" class="button">ORDER HOT</a></p>
+      </div>
+      <div class="card">
+        <h3>Iced Coffee</h3>
+        <h2></h2>
+        <img src="https://assets.codepen.io/296057/iced.jpg" alt="A copper mug of iced coffee" />
+        <p>Perfect for hot summer days, our iced coffee is made with just enough sweetness to cool down your day. </p>
+        <p><a href="" target="_blank" class="button">ORDER ICED</a></p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p><a href=""><img src="https://assets.codepen.io/296057/logo-footer.png" alt="Cannons Coffee Logo for footer" class="footer-logo" /></a></p>
+    <p>&copy; 2024 Cannons Coffee. All Rights Reserved.</p>
+  </footer>
+</div>
+<script src="js/run.js"></script>
 </body>
 </html>

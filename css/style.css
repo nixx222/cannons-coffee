@@ -11,6 +11,21 @@
   --mainfont: "Poppins", sans-serif;
 }
 
+/* .navlink {
+  list-style: none;
+  margin: 0;
+  background: #343434;
+  position: absolute;
+  right: -100%;
+  top: 70px;
+  width: 50%;
+  flex-direction: column;
+  height: calc(100% - 70px);
+  justify-content: space-around;
+  padding: 0;
+  transition: all 400ms;
+} */
+
 .top-nav {
   display: flex;
   justify-content: center;
@@ -23,7 +38,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: var(--white);
-  align-items: center;
 }
 
 .hero h2 {
@@ -35,7 +49,7 @@
   grid-column: 1/2;
   max-width: 100%;
   grid-row: 1/4;
-  /* padding: 1rem; */
+  padding: 1rem;
 }
 
 .hero p {
@@ -70,6 +84,7 @@
 header {
   background: var(--catalina);
   border-bottom: var(--sunglow) solid 0.5rem;
+/*   max-height: 145px; */
 }
 header h1 {
   color: var(--white);
@@ -80,8 +95,7 @@ nav ul {
   list-style: none;
   gap: 1rem;
   justify-content: center;
-  margin-top: -1rem;
-  /*   padding-top: rem; */
+  margin: 0;
 }
 
 nav a {
@@ -101,14 +115,11 @@ body {
 
 img {
   max-width: 100%;
-}
-
-.card img {
-    border-radius: 0.75rem;
+  border-radius: 0.75rem;
 }
 
 h1 {
-  font-size: 2.7rem;
+  font-size: 3rem;
   line-height: 1.1667;
   font-weight: 400;
   /*   border: 1px black solid; */
@@ -145,9 +156,40 @@ footer {
   border-top: var(--sunglow) 0.5rem solid;
 }
 
+@media (max-width: 649px) {
+  .burger {
+    display: block;
+  }
+  .navlink-wrapper {
+    background: #05327d;
+    position: absolute;
+/*     right: -100%; */
+    display: none;
+    top: 145px;
+    width: 50%;
+    flex-direction: column;
+    height: calc(100% - 145px);
+    justify-content: space-around;
+    padding: 0;
+    transition: all 400ms;
+    padding-left: 1rem;
+    border-top: var(--sunglow) 0.5rem solid;
+  }
+  nav {
+    display: flex;
+    justify-content: right;
+  }
+  .nav-active {
+    right: 0;
+    display: block;
+  }
+}
 @media (min-width: 650px) {
   .coffee-card {
     grid-template-columns: 1fr 1fr;
+  }
+  .burger {
+    display: none;
   }
 }
 
@@ -158,30 +200,7 @@ footer {
   }
   h2 {
     grid-row: 1/2;
-    margin-left: 0.5rem;
   }
-
-  h1 {
-    font-size: 2.3rem;
-  }
-
-  nav {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
-    }
-    
-    nav ul {
-      margin: 0;
-      padding-top: 2.7rem;
-    }
-    
-    header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 2rem;
-    }  
-  
 }
 
 /*
